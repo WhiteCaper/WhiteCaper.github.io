@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="Visit Us">
+      <title>Visit Us</title>
+      <link rel="icon" href="Cici's Pizza 1.jpg">
+      <style>
+         nav {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 13pt;
+            background-color: red;
+            width: 500px;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            justify-content: space-around;
+            border-radius: 20px;
+            position: relative;
+            left: 500px;
+         }
+
+         a {
+            color: white;
+         }
+
+         body {
+            background: rgba(123, 238, 0);
+         }
+
+         img {
+            width: 530px;
+            border: 3.5pt solid rgb(0, 192, 32);
+            position: absolute;
+            top: 60px;
+            left: 80px;
+         }
+
+         h1 {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 16pt;
+            text-align: center;
+            background-color: rgb(255, 176, 58);
+            border: 3.5pt solid rgb(0, 192, 32);
+            width: 260px;
+            padding: 7px;
+            position: absolute;
+            top: 80px;
+            left: 935px;
+         }
+
+         ul {
+            background: radial-gradient(circle,rgba(255, 209, 153, 1) 0%, rgba(255, 149, 0, 1) 100%);
+            border: 3.5pt solid rgb(0, 192, 32);
+            width: 500px;
+            height: 150px;
+            position: absolute;
+            top: 150px;
+            left: 800px;
+         }
+
+         li {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 12pt;
+            padding: 10px;
+         }
+
+         h2 {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 16pt;
+            text-align: center;
+            background-color: rgb(255, 176, 58);
+            border: 3.5pt solid rgb(0, 192, 32);
+            width: 100px;
+            padding: 7px;
+            position: absolute;
+            top: 450px;
+            left: 80px;
+         }
+
+         form {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #eee;
+            width: 1320px;
+            height: 300px;
+            padding: 10px;
+            border: 3.5pt solid rgb(0, 192, 32);
+            position: absolute;
+            top: 520px;
+            left: 80px;
+         }
+
+         label {
+            font-size: 13pt;
+            width: 50px;
+            display: inline-block;
+            text-align: right;
+            margin-right: 8px;
+            padding: 10px;
+         }
+
+         input[type=text], input[type=email] {
+            font-size: 13pt;
+            width: 200px;
+            height: 20px;
+            box-sizing: border-box;
+            width: 250px;
+            padding: 10px;
+            border: 1px solid #000;
+            border-radius: 4px;
+         }
+
+         select {
+            font-size: 13pt;
+            width: 100px;
+            height: 20px;
+            box-sizing: border-box;
+            padding: 10px;
+            border: 1px solid #000;
+            border-radius: 4px;
+         }
+
+         button [type=submit] {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 13pt;
+            width: 200px;
+            height: 20px;
+            color: white;
+            padding: 15px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+         }
+
+         button [type=submit]:hover {
+            background-color: #09f;
+         }
+      </style>
+   </head>
+
+   <nav>
+      <a href="index.html">Home Page</a>
+      <a href="about us.html">About Us</a>
+      <a href="gallery and products.html">Products</a>
+   </nav>
+
+   <body>
+      <img src="Google Map Image.jpg" alt="Google Map Image">
+      <h1><u>Parking and Accessibility:</u></h1>
+      <ul>
+         <li><b>Fuqua Park & Ride:</b> The parking lot offers ample parking for coomuters.</li>
+         <li><b>Disabled Parking:</b> Vehicles with a valid disabled placard or plate may park in designated spaces.</li>
+         <li><b>Nearby Amenities:</b> The area provides easy access to local businesses.</li>
+      </ul>
+
+      <section>
+         <h2><u>Feedback:</u></h2>
+         <form action="/submit-feedback" method="POST">
+            <label for="name" style="position: absolute; top: 5px; left: 5px;">Name:</label>
+            <input type="text" id="name" name="name" required style="position: absolute; top: 14px; left: 85px;"><br><br>
+
+            <label for="email" style="position: absolute; top: 45px; left: 5px;">Email:</label>
+            <input type="email" id="email" name="email" required style="position: absolute; top: 53px; left: 85px;"><br><br>
+
+            <label for="rating" style="position: absolute; top: 85px; left: 10px;">Rating:</label>
+            <select id="rating" id="rating" required style="position: absolute; top: 95px; left: 85px;">
+                  <option value="Excellent">Excellent</option>
+                  <option value="Average">Average</option>
+                  <option value="Poor">Poor</option>
+            </select><br>
+
+            <label for="comments" required style="position: absolute; top: 125px; left: 10px;">Comments:</label><br>
+            <textarea id="comments" name="comments" rows="6" cols="40" style="1px solid #000; position: absolute; top: 170px; left: 20px;"></textarea><br><br>
+
+            <button type="submit" style="position: absolute; top: 285px; left: 20px;">Submit</button>
+         </form>
+      </section>
+   </body>
+</html>
