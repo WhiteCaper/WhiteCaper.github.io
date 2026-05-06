@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="Visit Us">
+      <title>Visit Us</title>
+      <link rel="icon" href="Cici's Pizza 1.jpg">
+      <style>
+          nav {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            justify-content: space-evenly;
+            border-radius: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 13pt;
+            background-color: red;
+         }
+
+         a {
+            color: white;
+         }
+
+         body {
+            background: linear-gradient(180deg,rgba(132, 255, 0, 1) 0%, rgba(0, 97, 3, 1) 100%);
+            background-repeat: no-repeat;
+         }
+      </style>
+   </head>
+
+   <nav>
+      <a href="index.html">Home Page</a>
+      <a href="about us.html">About Us</a>
+      <a href="gallery and products.html">Products</a>
+   </nav>
+
+   <body>
+      <img src="Google Map Image.jpg" alt="Google Map Image">
+      <h1>Parking and Accessibility:</h1>
+      <ul>
+         <li><b>Fuqua Park & Ride:</b> The parking lot offers ample parking for coomuters.</li>
+         <li><b>Disabled Parking:</b> Vehicles with a valid disabled placard or plate may park in designated spaces.</li>
+         <li><b>Nearby Amenities:</b> The area provides easy access to local businesses.</li>
+      </ul>
+
+      <section>
+         <h2>Contact Form:</h2>
+         <form action="/submit-feedback" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label>Rating:</label>
+            <input type="radio" id="excellent" name="rating" value="excellent">
+            <label for="excellent">Excellent</label>
+            <input type="radio" id="descent" name="rating" value="descent">
+            <label for="descent">Descent</label>
+            <input type="radio" id="poor" name="rating" value="poor">
+            <label for="poor">Poor</label><br><br>
+
+            <label for="comments">Comments:</label><br>
+            <textarea id="comments" name="comments" rows="6" cols="40"></textarea><br><br>
+
+            <button type="submit">Submit</button>
+         </form>
+      </section>
+   </body>
+</html>
